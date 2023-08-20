@@ -10,6 +10,7 @@ import ProjectDescription from '@/components/Projects/ProjectDescription';
 import ProjectText from '@/components/Projects/ProjectText';
 import LanguageHighlight from '@/components/Projects/LanguageHighlight';
 import CourseHighlight from '@/components/Projects/CourseHighlight';
+import ExternalLink from '@/components/Projects/ExternalLink';
 import ProjectLink from '@/components/Projects/ProjectLink';
 
 export default function Home() {
@@ -54,12 +55,9 @@ export default function Home() {
             <ProjectDescription>
               Course project for <CourseHighlight>Introduction to Software Engineering</CourseHighlight> written in <LanguageHighlight>Java</LanguageHighlight>. Navigation app that lets users maneuver through buildings, floors, and view important landmarks on Western&apos;s campus.
             </ProjectDescription>
-            <ProjectLink 
-              link='https://github.com/kore4n/School/tree/main/Year%202/CS%202212/Course%20Project'
-              logoSrc="./icons/GitHubIcon.png"  
-            >
-              View project
-            </ProjectLink>
+            <ProjectLink
+              externalLink='https://github.com/kore4n/School/tree/main/Year%202/CS%202212/Course%20Project'
+            />
           </ProjectText>
           <Image
               src="./images/projects/WesternNav1.PNG" 
@@ -76,12 +74,9 @@ export default function Home() {
             <ProjectDescription>
               Course project for <CourseHighlight>Object Oriented Programming</CourseHighlight> written in <LanguageHighlight>C++</LanguageHighlight>. Nicknamed Chungus Assistant, uses ChatGPT&apos;s api to give intelligent responses, taking vocal input and giving audible responses via text-to-speech.
             </ProjectDescription>
-            <ProjectLink 
-              link='https://github.com/kore4n/School/tree/main/Year%203/CS3307'
-              logoSrc="./icons/GitHubIcon.png"  
-            >
-              View project
-            </ProjectLink>
+            <ProjectLink
+              externalLink='https://github.com/kore4n/School/tree/main/Year%203/CS3307'
+            />
           </ProjectText>
           <Image
             src="./images/projects/alexa.png"
@@ -98,12 +93,9 @@ export default function Home() {
             <ProjectDescription>
               Final project for <CourseHighlight>Operating Systems</CourseHighlight> written in <LanguageHighlight>C</LanguageHighlight>. Uses Unix multithreading and mutex locks to solve a theoretical problem involving transporting passengers on trains between stations.
             </ProjectDescription>
-            <ProjectLink 
-              link='https://github.com/kore4n/School/tree/main/Year%203/CS3305/Assignment5'
-              logoSrc="./icons/GitHubIcon.png"  
-            >
-              View project
-            </ProjectLink>
+            <ProjectLink
+              externalLink='https://github.com/kore4n/School/tree/main/Year%203/CS3305/Assignment5'
+            />
           </ProjectText>
           <Image
             src="./images/projects/Assn_5_Demonstration.PNG"
@@ -130,12 +122,12 @@ export default function Home() {
               I am pursuing a bachelor&apos;s degree in Computer Science with a minor in Game Development. I previously majored in Medical Sciences, but switched after realizing my passion for Computer Science.
               My current obsession is prototyping games in <span className='font-bold'>Unity</span> in hopes of making something extraordinary - someday.
             </div>
-            <ProjectLink 
+            <ExternalLink 
               link='https://docs.google.com/document/d/1AlARb_llPzyZaCGtmnjThoUqZKI6d7YZ/edit?usp=sharing&ouid=101263568990628764477&rtpof=true&sd=true'
               logoSrc='./icons/LinkIcon.png'
             >
               Resume
-            </ProjectLink>
+            </ExternalLink>
           </div>
         </Section>
       </div>
