@@ -3,6 +3,10 @@ import React from 'react'
 
 export default function NavbarLink({ children, link }: { children: React.ReactNode, link: string }) {
   return (
-    <Link href={link} className=' hover:text-black duration-300'>{children}</Link>
+    <a 
+      href={link}
+      className='text-lg hover:text-slate-500 text-gray-300 duration-300'
+      >{children}
+    </a>
   )
 }

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import NavbarLink from './NavbarLink';
 
@@ -7,11 +6,11 @@ function Navbar() {
   const logoDimensions = 42;
 
   return (
-    <header className='flex justify-between gap-10 bg-gradient-to-r from-blue-900 to-cyan-900 brightness-150 opacity-95 pr-10 py-6'>
+      <header className='flex justify-between gap-10 brightness-200 opacity-95 bg-gradient-to-l from-blue-900 to-cyan-900 pr-10 py-6'>
         {/* Main Logo */}
         <span className=' pl-40'>
           <Image 
-            src='./images/JKSignature.png'
+            src='./icons/JKSignature.png'
             className=' fill-white object-fill'
             width={logoDimensions}
             height={logoDimensions}
@@ -19,18 +18,14 @@ function Navbar() {
           />
         </span>
         <ul className='flex gap-10'>
-          {/* TODO: Line underneath when hovering */}
           <li>
-            <NavbarLink link="/">Home</NavbarLink>
+            <NavbarLink link="#about">About</NavbarLink>
           </li>
           <li>
-            <NavbarLink link="/about">About</NavbarLink>
+            <NavbarLink link="#projects">Projects</NavbarLink>
           </li>
           <li>
-            <NavbarLink link="/projects">Projects</NavbarLink>
-          </li>
-          <li>
-            <NavbarLink link="/contact">Contact</NavbarLink>
+            <NavbarLink link="#contact">Contact</NavbarLink>
           </li>
         </ul> 
       </header>
