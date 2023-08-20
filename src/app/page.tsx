@@ -62,7 +62,7 @@ export default function Home() {
             </ProjectLink>
           </ProjectText>
           <Image
-              src="./images/projects/WesternNav1.png" 
+              src="./images/projects/WesternNav1.PNG" 
               width={500}
               height={100}
               alt='western nav logo'
